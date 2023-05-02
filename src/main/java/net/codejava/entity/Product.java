@@ -9,21 +9,27 @@ import javax.persistence.Id;
 public class Product {
 
     private Long id;
-    private String name;
-    private String brand;
-    private String madein;
-    private float price;
+    private String customer;
+    private String so;
+    private String po;
+    private String stringline;
+    private String date;
+    private String designer;
+    private String folder;
 
     public Product() {
     }
 
-    protected Product(Long id, String name, String brand, String madein, float price) {
+    protected Product(Long id, String customer, String so, String po, String stringline, String date, String designer, String folder) {
         super();
         this.id = id;
-        this.name = name;
-        this.brand = brand;
-        this.madein = madein;
-        this.price = price;
+        this.customer = customer;
+        this.so = so;
+        this.po = po;
+        this.stringline = stringline;
+        this.date = date;
+        this.designer = designer;
+        this.folder = folder;
     }
 
     @Id
@@ -36,36 +42,62 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCustomer() {
+        return customer;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCustomer(String customer) {
+        this.customer = customer;
     }
 
-    public String getBrand() {
-        return brand;
+    public String getSo() {
+        return so;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setSo(String so) {
+        this.so = so;
     }
 
-    public String getMadein() {
-        return madein;
+    public String getPo() {
+        return po;
     }
 
-    public void setMadein(String madein) {
-        this.madein = madein;
+    public void setPo(String po) {
+        this.po = po;
     }
 
-    public float getPrice() {
-        return price;
+    public String getStringline() {
+        return stringline;
     }
 
-    public void setPrice(float price) {
-        this.price = price;
+    public void setStringline(String stringline) {
+        this.stringline = stringline;
     }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDesigner() {
+        return designer;
+    }
+
+    public void setDesigner(String designer) {
+        this.designer = designer;
+    }
+
+    public String getFolder() {
+        return folder;
+    }
+
+    public void setFolder(String folder) {
+        this.folder = folder;
+    }
+    
+    
 
 }

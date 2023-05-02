@@ -44,7 +44,7 @@ public class AppController {
 
     @RequestMapping("/login")
     public String login(HttpSession session) {
-        session.setAttribute("mySessionAttribute", "sasas");
+        session.setAttribute("mySessionAttribute", "Jonathan");
 
         // model.addAttribute("listProducts", listProducts);
         return "redirect:/";

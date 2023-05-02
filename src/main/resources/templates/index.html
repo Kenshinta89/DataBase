@@ -17,21 +17,27 @@
                             <table border="1" cellpadding="10" class="table table-striped table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Product ID</th>
-                                        <th>Name</th>
-                                        <th>Brand</th>
-                                        <th>Made In</th>
-                                        <th>Price</th>
+                                        <th>ID</th>
+                                        <th>Customer</th>
+                                        <th>SO</th>
+                                        <th>PO</th>
+                                        <th>String Line</th>
+                                        <th>Date</th>
+                                        <th>Designer</th>
+                                        <th>Folder Link</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr th:each="product : ${listProducts}">
-                                        <td th:text="${product.id}">Product ID</td>
-                                        <td th:text="${product.name}">Name</td>
-                                        <td th:text="${product.brand}">Brand</td>
-                                        <td th:text="${product.madein}">Made in</td>
-                                        <td th:text="${product.price}">Price</td>
+                                        <td th:text="${product.id}">ID</td>
+                                        <td th:text="${product.customer}">Customer</td>
+                                        <td th:text="${product.so}">SO</td>
+                                        <td th:text="${product.po}">PO</td>
+                                        <td th:text="${product.stringline}">String Line</td>
+                                        <td th:text="${product.date}">Date</td>
+                                        <td th:text="${product.designer}">Designer</td>
+                                        <td th:text="${product.folder}">Folder Link</td>
                                         <td>
                                             <a th:href="@{'/edit/' + ${product.id}}">Edit</a>
                                             &nbsp;&nbsp;&nbsp;
